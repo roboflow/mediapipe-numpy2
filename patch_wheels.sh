@@ -61,7 +61,7 @@ process_wheel() {
   # extract version and rename dist-info folder
   local ver="${distinfo##*/mediapipe-}"
   ver="${ver%.dist-info}"
-  local new_distinfo="$unpack_dir/rf-mediapipe-${ver}.dist-info"
+  local new_distinfo="$unpack_dir/rf_mediapipe-${ver}.dist-info"
   mv "$distinfo" "$new_distinfo"
   local meta="$new_distinfo/METADATA"
 
@@ -78,7 +78,7 @@ process_wheel() {
     printf "Requires-Dist: numpy%s" "$EOL" >> "$meta"
   fi
   sed -i.bak -E \
-    -e 's/^(Name: ).*(\r)?$/\1rf-mediapipe\2/' \
+    -e 's/^(Name: ).*(\r)?$/\1rf_mediapipe\2/' \
     -e 's|^(Home-page: ).*(\r)?$|\1https://github.com/roboflow/mediapipe-numpy2\2|' \
     "$meta"
   rm -f "$meta.bak"
@@ -97,7 +97,7 @@ process_wheel() {
   fi
 
   mkdir -p "$OUTPUT_DIR"
-  mv "${built[0]}" "$OUTPUT_DIR/rf-mediapipe-${suffix}.whl"
+  mv "${built[0]}" "$OUTPUT_DIR/rf_mediapipe-${suffix}.whl"
 }
 
 main() {

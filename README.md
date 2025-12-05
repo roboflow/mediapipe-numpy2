@@ -60,11 +60,11 @@ import mediapipe as mp
 
 3. **Install a patched wheel:**
    ```sh
-   pip install ./patched_wheels/rf-mediapipe-*.whl
+   pip install ./patched_wheels/rf_mediapipe-*.whl
    ```
 
 ### Notes
 
-- The patched wheels are named `rf-mediapipe` to avoid clashing with the official package.
+- The patched wheels are named `rf_mediapipe` to avoid clashing with the official package.
 - This repository is not affiliated with the official mediapipe project.
 - Use at your own risk; always test compatibility with your workflow.
