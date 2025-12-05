@@ -1,7 +1,4 @@
-# mediapipe-numpy2 
-[![Patch Wheels](https://github.com/cansik/mediapipe-numpy2/actions/workflows/patch.yaml/badge.svg)](https://github.com/cansik/mediapipe-numpy2/actions/workflows/patch.yaml)
-[![Test](https://github.com/cansik/mediapipe-numpy2/actions/workflows/test-mediapipe-numpy2.yaml/badge.svg)](https://github.com/cansik/mediapipe-numpy2/actions/workflows/test-mediapipe-numpy2.yaml)
-[![PyPI](https://img.shields.io/pypi/v/mediapipe-numpy2)](https://pypi.org/project/mediapipe-numpy2/)
+# rf-mediapipe - fork of [mediapipe-numpy2](https://github.com/cansik/mediapipe-numpy2)
 
 A patching tool to remove the `numpy<2` constraint from
 official [mediapipe](https://github.com/google-ai-edge/mediapipe) wheels.
@@ -44,7 +41,7 @@ import mediapipe as mp
 
 1. **Clone this repository:**
    ```sh
-   git clone https://github.com/cansik/mediapipe-numpy2.git
+   git clone https://github.com/roboflow/mediapipe-numpy2.git
    cd mediapipe-numpy2
    ```
 
@@ -63,11 +60,11 @@ import mediapipe as mp
 
 3. **Install a patched wheel:**
    ```sh
-   pip install ./patched_wheels/mediapipe_numpy2-*.whl
+   pip install ./patched_wheels/rf_mediapipe-*.whl
    ```
 
 ### Notes
 
-- The patched wheels are named `mediapipe-numpy2` to avoid clashing with the official package.
+- The patched wheels are named `rf_mediapipe` to avoid clashing with the official package.
 - This repository is not affiliated with the official mediapipe project.
 - Use at your own risk; always test compatibility with your workflow.
